@@ -13,3 +13,19 @@ spec:
   selector:
     app: argocd-helm-nginx
     release: {{ .Release.Name }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: argocd-helm-nginx1
+  labels:
+    app: argocd-helm-nginx1
+    release: {{ .Release.Name }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - name: http
+      port: {{ .Values.service.port }}
+  selector:
+    app: argocd-helm-nginx1
+    release: {{ .Release.Name }}
