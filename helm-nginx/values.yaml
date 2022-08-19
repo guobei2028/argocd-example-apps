@@ -9,10 +9,10 @@ image:
   tag: 1.8.1
   pullPolicy: IfNotPresent
 
-busybox:
+nginx:
   image:
-    repository: busybox
-    tag: 1.34
+    repository: csighub.tencentyun.com/mollieguo/nginx-test
+    tag: 1.7.0
     pullPolicy: IfNotPresent
 
 service:
