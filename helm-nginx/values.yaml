@@ -6,13 +6,13 @@ replicaCount: 1
 
 image:
   repository: nginx
-  tag: 1.8.1
+  tag: 1.7.9
   pullPolicy: IfNotPresent
 
 nginx:
   image:
     repository: csighub.tencentyun.com/mollieguo/nginx-test
-    tag: 1.7.0
+    tag: 1.8.1
     pullPolicy: IfNotPresent
 
 service:
