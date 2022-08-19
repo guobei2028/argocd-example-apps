@@ -9,6 +9,12 @@ image:
   tag: 1.8.1
   pullPolicy: IfNotPresent
 
+busybox:
+  image:
+    repository: busybox
+    tag: 1.34
+    pullPolicy: IfNotPresent
+
 service:
   type: ClusterIP
   port: 80
